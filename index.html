@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BIJOUX HAIR | L'élégance au féminin</title>
+
+    <meta name="description"
+
+          content="BIJOUX HAIR : découvrez notre collection de perruques élégantes. Contactez-nous sur WhatsApp pour les prix et les commandes.">
+
+    <style>
+
+        :root {
+
+            --noir: #100e0d;
+
+            --noir-doux: #1c1815;
+
+            --or: #d4af67;
+
+            --or-clair: #f0dca9;
+
+            --blanc: #ffffff;
+
+            --creme: #f8f4ed;
+
+            --gris: #bdb5ad;
+
+        }
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            background: var(--creme);
+
+            color: var(--noir);
+
+            line-height: 1.7;
+
+        }
+
+        a {
+
+            text-decoration: none;
+
+            color: inherit;
+
+        }
+
+        img {
+
+            max-width: 100%;
+
+        }
+
+        /* EN-TÊTE */
+
+        header {
+
+            background: var(--noir);
+
+            color: var(--blanc);
+
+            padding: 20px 7%;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            gap: 20px;
+
+            flex-wrap: wrap;
+
+            border-bottom: 1px solid #d4af6740;
+
+        }
+
+        .logo {
+
+            color: var(--or);
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+        }
+
+        .logo span {
+
+            display: block;
+
+            color: var(--blanc);
+
+            font-size: 10px;
+
+            letter-spacing: 4px;
+
+            text-align: center;
+
+        }
+
+        nav {
+
+            display: flex;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 24px;
+
+        }
+
+        nav a {
+
+            font-size: 14px;
+
+            transition: color .3s;
+
+        }
+
+        nav a:hover {
+
+            color: var(--or);
+
+        }
+
+        /* PAGE D'ACCUEIL */
+
+        .hero {
+
+            min-height: 600px;
+
+            display: flex;
+
+            align-items: center;
+
+            padding: 75px 8%;
+
+            color: var(--blanc);
+
+            background:
+
+                url("image/bijoux\ hair\(22\).jpeg")
+
+                center 35%/cover;
+
+        }
+
+        .hero-content {
+
+            max-width: 620px;
+
+        }
+
+        .eyebrow {
+
+            color: var(--or);
+
+            font-size: 13px;
+
+            letter-spacing: 4px;
+
+            font-weight: bold;
+
+        }
+
+        h1 {
+
+            color: var(--blanc);
+
+            font-family: Georgia, serif;
+
+            font-size: clamp(40px, 6vw, 68px);
+
+            line-height: 1.12;
+
+            margin: 22px 0;
+
+        }
+
+        .hero p {
+
+            max-width: 520px;
+
+            color: #eee4d8;
+
+            font-size: 17px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            background: var(--or);
+
+            color: var(--noir);
+
+            padding: 13px 23px;
+
+            border: 1px solid var(--or);
+
+            border-radius: 3px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            text-align: center;
+
+            transition: .3s;
+
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+
+            background: transparent;
+
+            color: var(--or);
+
+        }
+
+        /* SECTIONS */
+
+        section {
+
+            padding: 75px 7%;
+
+        }
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+
+        }
+
+        .section-title .eyebrow {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+        }
+
+        .section-title h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: clamp(28px, 4vw, 40px);
+
+            color: var(--noir);
+
+            line-height: 1.3;
+
+        }
+
+        .section-title p {
+
+            color: #756c64;
+
+            margin-top: 10px;
+
+        }
+
+        /* COLLECTION */
+
+        .products {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 25px;
+
+        }
+
+        .product {
+
+            background: var(--blanc);
+
+            border: 1px solid #e5d8c7;
+
+            transition: transform .3s, box-shadow .3s;
+
+        }
+
+        .product:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 12px 30px #00000012;
+
+        }
+
+        .product img {
+
+            width: 100%;
+
+            height: 320px;
+
+            object-fit: cover;
+
+            display: block;
+
+            background: #e9dfd4;
+
+        }
+
+        .product-info {
+
+            padding: 22px;
+
+        }
+
+        .product h3 {
+
+            font-family: Georgia, serif;
+
+            font-size: 22px;
+
+            margin-bottom: 8px;
+
+        }
+
+        .product-info p {
+
+            color: #756c64;
+
+            font-size: 14px;
+
+            margin-bottom: 15px;
+
+        }
+
+        .price {
+
+            color: #94702e !important;
+
+            font-weight: bold;
+
+            font-size: 15px !important;
+
+        }
+
+        .product .btn {
+
+            width: 100%;
+
+        }
+
+        /* À PROPOS */
+
+        .about {
+
+            background: var(--noir-doux);
+
+            color: var(--blanc);
+
+        }
+
+        .about .section-title h2 {
+
+            color: var(--blanc);
+
+        }
+
+        .about .section-title p {
+
+            color: var(--gris);
+
+        }
+
+        .advantages {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 25px;
+
+        }
+
+        .advantage {
+
+            border: 1px solid #d4af674d;
+
+            padding: 30px 22px;
+
+            text-align: center;
+
+        }
+
+        .symbol {
+
+            color: var(--or);
+
+            font-size: 35px;
+
+            margin-bottom: 10px;
+
+        }
+
+        .advantage h3 {
+
+            color: var(--or-clair);
+
+            margin-bottom: 10px;
+
+        }
+
+        .advantage p {
+
+            color: #d1c8bf;
+
+            font-size: 14px;
+
+        }
+
+        /* CONTACT */
+
+        .contact {
+
+            background: var(--creme);
+
+            text-align: center;
+
+        }
+
+        .contact h2 {
+
+            font-family: Georgia, serif;
+
+            font-size: clamp(28px, 4vw, 40px);
+
+            margin-bottom: 12px;
+
+        }
+
+        .contact p {
+
+            color: #756c64;
+
+            margin-bottom: 25px;
+
+        }
+
+        .contact .btn {
+
+            min-width: 230px;
+
+        }
+
+        /* PIED DE PAGE */
+
+        footer {
+
+            background: var(--noir);
+
+            color: var(--gris);
+
+            text-align: center;
+
+            padding: 30px 6%;
+
+            font-size: 13px;
+
+        }
+
+        footer .footer-logo {
+
+            color: var(--or);
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            font-size: 18px;
+
+            margin-bottom: 8px;
+
+        }
+
+        footer .copyright {
+
+            margin-top: 12px;
+
+        }
+
+        /* BOUTON WHATSAPP FLOTTANT */
+
+        .whatsapp-float {
+
+            position: fixed;
+
+            bottom: 20px;
+
+            right: 20px;
+
+            z-index: 100;
+
+            background: #25d366;
+
+            color: white;
+
+            border-radius: 35px;
+
+            padding: 13px 19px;
+
+            font-weight: bold;
+
+            box-shadow: 0 4px 18px #0003;
+
+        }
+
+        .whatsapp-float:hover {
+
+            background: #128c4a;
+
+        }
+
+        /* ADAPTATION AUX TÉLÉPHONES */
+
+        @media (max-width: 800px) {
+
+            header {
+
+                justify-content: center;
+
+                text-align: center;
+
+            }
+
+            nav {
+
+                justify-content: center;
+
+                gap: 15px;
+
+            }
+
+            .hero {
+
+                min-height: 500px;
+
+                padding: 60px 7%;
+
+                background-position: 60% center;
+
+            }
+
+            .products {
+
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                gap: 15px;
+
+            }
+
+            .product img {
+
+                height: 240px;
+
+            }
+
+            .advantages {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+        @media (max-width: 480px) {
+
+            .logo {
+
+                font-size: 22px;
+
+            }
+
+            nav {
+
+                gap: 12px;
+
+            }
+
+            nav a {
+
+                font-size: 12px;
+
+            }
+
+            .hero {
+
+                min-height: 470px;
+
+            }
+
+            .hero p {
+
+                font-size: 15px;
+
+            }
+
+            section {
+
+                padding: 55px 5%;
+
+            }
+
+            .products {
+
+                grid-template-columns: 1fr;
+
+            }
+
+            .product img {
+
+                height: 320px;
+
+            }
+
+            .product-info {
+
+                padding: 18px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- EN-TÊTE -->
+
+    <header>
+
+        <a href="#accueil" class="logo">
+
+            BIJOUX HAIR
+
+            <span>BEAUTÉ & ÉLÉGANCE</span>
+
+        </a>
+
+        <nav>
+
+            <a href="#accueil">Accueil</a>
+
+            <a href="#collection">Collection</a>
+
+            <a href="#apropos">À propos</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- ACCUEIL -->
+
+        <section class="hero" id="accueil">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">LUXE • BEAUTÉ • CONFIANCE</span>
+
+                <h1>Votre beauté, notre signature.</h1>
+
+                <p>
+
+                    Découvrez l'univers de BIJOUX HAIR :
+
+                    des styles de perruques pour sublimer votre beauté,
+
+                    affirmer votre personnalité et révéler votre élégance.
+
+                </p>
+
+                <a href="#collection" class="btn">
+
+                    DÉCOUVRIR LA COLLECTION
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- COLLECTION -->
+
+        <section id="collection">
+
+            <div class="section-title">
+
+                <span class="eyebrow">NOTRE SÉLECTION</span>
+
+                <h2>La beauté dans chaque détail</h2>
+
+                <p>
+
+                    Découvrez nos inspirations et demandez les modèles
+
+                    disponibles directement sur WhatsApp.
+
+                </p>
+
+            </div>
+
+            <div class="products">
+
+                <article class="product">
+
+                    <img
+
+                        src="image/bijoux hair(11).jpeg"
+
+                        alt="Inspiration beauté pour une perruque lisse"
+
+                        loading="lazy">
+
+                    <div class="product-info">
+
+                        <h3>Perruques lisses</h3>
+
+                        <p>
+
+                            Un style chic et intemporel pour toutes
+
+                            vos occasions.
+
+                        </p>
+
+                        <p class="price">Prix sur WhatsApp</p>
+
+                        <a href="#" class="btn order"
+
+                           data-product="Perruques lisses">
+
+                            DEMANDER LE PRIX
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product">
+
+                    <img
+
+                        src="image/bijoux hair(21).jpeg"
+
+                        alt="Inspiration beauté pour une perruque ondulée"
+
+                        loading="lazy">
+
+                    <div class="product-info">
+
+                        <h3>Perruques ondulées</h3>
+
+                        <p>
+
+                            Du mouvement, du volume et une allure
+
+                            pleine de glamour.
+
+                        </p>
+
+                        <p class="price">Prix sur WhatsApp</p>
+
+                        <a href="#" class="btn order"
+
+                           data-product="Perruques ondulées">
+
+                            DEMANDER LE PRIX
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="product">
+
+                    <img
+
+                        src="image/bijoux hair(12).jpeg"
+
+                        alt="Inspiration beauté pour une perruque bouclée"
+
+                        loading="lazy">
+
+                    <div class="product-info">
+
+                        <h3>Perruques bouclées</h3>
+
+                        <p>
+
+                            Une coiffure pleine de caractère
+
+                            pour exprimer votre style.
+
+                        </p>
+
+                        <p class="price">Prix sur WhatsApp</p>
+
+                        <a href="#" class="btn order"
+
+                           data-product="Perruques bouclées">
+
+                            DEMANDER LE PRIX
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- À PROPOS -->
+
+        <section class="about" id="apropos">
+
+            <div class="section-title">
+
+                <span class="eyebrow">L'UNIVERS BIJOUX HAIR</span>
+
+                <h2>Plus qu'une coiffure, une signature.</h2>
+
+                <p>
+
+                    Notre objectif : vous aider à trouver un style
+
+                    qui vous ressemble.
+
+                </p>
+
+            </div>
+
+            <div class="advantages">
+
+                <div class="advantage">
+
+                    <div class="symbol">✦</div>
+
+                    <h3>Élégance</h3>
+
+                    <p>
+
+                        Des inspirations de coiffures pour vos sorties,
+
+                        vos événements et votre quotidien.
+
+                    </p>
+
+                </div>
+
+                <div class="advantage">
+
+                    <div class="symbol">♡</div>
+
+                    <h3>Conseils personnalisés</h3>
+
+                    <p>
+
+                        Contactez-nous pour obtenir des informations
+
+                        et choisir votre modèle.
+
+                    </p>
+
+                </div>
+
+                <div class="advantage">
+
+                    <div class="symbol">✧</div>
+
+                    <h3>Commande simple</h3>
+
+                    <p>
+
+                        Demandez les prix et les disponibilités
+
+                        directement sur WhatsApp.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+
+        <section class="contact" id="contact">
+
+            <span class="eyebrow">NOUS SOMMES À VOTRE ÉCOUTE</span>
+
+            <h2>Votre prochain look vous attend.</h2>
+
+            <p>
+
+                Écrivez-nous pour connaître les prix,
+
+                les modèles disponibles et les modalités de commande.
+
+            </p>
+
+            <a href="#" class="btn" id="main-whatsapp">
+
+                CONTACTER BIJOUX HAIR
+
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+
+    <footer>
+
+        <div class="footer-logo">BIJOUX HAIR</div>
+
+        <p>Beauté, élégance et confiance.</p>
+
+        <p>Commandes et renseignements sur WhatsApp.</p>
+
+        <p class="copyright">
+
+            © <span id="year"></span> BIJOUX HAIR.
+
+            Tous droits réservés.
+
+        </p>
+
+    </footer>
+
+    <!-- WHATSAPP FLOTTANT -->
+
+    <a href="#" class="whatsapp-float" id="float-whatsapp"
+
+       aria-label="Contacter BIJOUX HAIR sur WhatsApp">
+
+        WhatsApp
+
+    </a>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // Numéro WhatsApp international, sans + ni espaces.
+
+        const numeroWhatsApp = "243836010154";
+
+        // Création du lien WhatsApp avec un message prérempli.
+
+        function lienWhatsApp(message) {
+
+            return "https://wa.me/" + numeroWhatsApp
+
+                + "?text=" + encodeURIComponent(message);
+
+        }
+
+        // Année automatique dans le pied de page.
+
+        document.getElementById("year").textContent =
+
+            new Date().getFullYear();
+
+        // Bouton principal de contact.
+
+        document.getElementById("main-whatsapp").href =
+
+            lienWhatsApp(
+
+                "Bonjour BIJOUX HAIR ! Je souhaite connaître vos perruques disponibles, leurs prix et les modalités de commande."
+
+            );
+
+        // Bouton WhatsApp flottant.
+
+        document.getElementById("float-whatsapp").href =
+
+            lienWhatsApp(
+
+                "Bonjour BIJOUX HAIR ! Je souhaite avoir des informations sur vos perruques."
+
+            );
+
+        // Boutons de demande de prix pour chaque modèle.
+
+        document.querySelectorAll(".order").forEach(function (bouton) {
+
+            const modele = bouton.dataset.product;
+
+            bouton.href = lienWhatsApp(
+
+                "Bonjour BIJOUX HAIR ! Je suis intéressée par : "
+
+                + modele
+
+                + ". Quel est le prix et quels modèles sont disponibles ?"
+
+            );
+
+        });
+
+    </script>
+
+</body>
+
+</html>
